@@ -24,15 +24,46 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.toasts-container {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  z-index: 10000;
+  font-size: 14px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.toast-box {
+  border-radius: 4px;
+  padding: 11px 50px 11px 15px;
+  margin: 10px;
+  position: relative;
+}
+
+.toast-box.error {
+  background-color: #f1c2c0;
+  color: #b4302b;
+}
+
+.toast-box.success {
+  background-color: #d1e0c8;
+  color: #5d8009;
+}
+
+.toast-box.warning {
+  background-color: #d9da9a;
+  color: #79720b;
+}
+
+.toast-box button.close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  color: #494a4a;
+  outline: 0;
+  cursor: pointer;
 }
